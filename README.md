@@ -109,9 +109,12 @@ GROUP BY c.customer_id, c.first_name, c.last_name
 ORDER BY total_spending DESC
 LIMIT 1;
 
+---
 
+# 🟦 QUESTION SET 2  —  MODERATE LEVEL
 
- 🟩 QUESTION SET 2 — MODERATE LEVEL
+---
+
 
 ✅ Q1: Rock music listeners (email, names, genre)
 Method 1
@@ -127,7 +130,11 @@ WHERE track_id IN(
 	WHERE g.name LIKE 'Rock'
 )
 ORDER BY email;
-                                   Method 2
+---
+
+# Method 2
+
+---
 
 sql
 SELECT DISTINCT email AS Email, first_name AS FirstName, last_name AS LastName, genre.name AS Name
@@ -165,10 +172,11 @@ WHERE milliseconds > (
 	SELECT AVG(milliseconds) FROM track )
 ORDER BY milliseconds DESC;
 
+---
 
+# 🟦 QUESTION SET 3 — ADVANCED LEVEL
 
-
-🟥 QUESTION SET 3 — ADVANCED LEVEL
+---
 
 
 ✅ Q1: Amount spent by each customer on the best-selling artist
